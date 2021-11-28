@@ -10,54 +10,54 @@
           charset="utf-8">
   </head>
   <body class="page">
-    <header class="info">
-      <img class="info-img" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
-      <a class="more-inf"
+    <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
+      <a class="header__link"
          href="https://goal-life.com/page/method/matrix-eisenhower">
          Want more details?
       </a>
     </header>
     <main class="main-container">
-      <section id="add-section">
-        <label class="new-task" for="new-task">Add Item</label>
-        <div class="task-wrapper">
-          <input id="new-task" class="task task-input" type="text">
-          <button class="todo-btn">Add</button>
+      <section class="add-section">
+        <label class="add-section__new-task" for="new-task">Add Item</label>
+        <div class="add-section__task-wrapper">
+          <input id="new-task" class="add-section__input task task__input_text" type="text">
+          <button class="add-section__button button">Add</button>
         </div>
       </section>
       <section>
         <h3 class="title">Todo</h3>
-        <ul id="incomplete-tasks" class="list">
-          <li class="list-item">
-            <input class="task-check" type="checkbox">
-            <label class="task task-label">Pay Bills</label>
-            <input type="text" class="task task-input">
-            <button class="edit todo-btn">Edit</button>
-            <button class="delete todo-btn">
-              <img class="remove-ico" src="./remove.svg" alt="">
+        <ul class="list list_incompleted">
+          <li class="task-item">
+            <input class="task-item__input_check" type="checkbox">
+            <label class="task task-item__label">Pay Bills</label>
+            <input type="text" class="task task__input_text">
+            <button class="button_edit button">Edit</button>
+            <button class="button_delete button">
+              <img class="button__remove-img" src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="list-item edit-mode">
-            <input class="task-check" type="checkbox">
-            <label class="task task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task task-input">
-            <button class="edit todo-btn">Save</button>
-            <button class="delete todo-btn">
-              <img class="remove-ico" src="./remove.svg" alt="">
+          <li class="task-item task-item_edit">
+            <input class="task-item__input_check" type="checkbox">
+            <label class="task task-item__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task task__input_text">
+            <button class="button_edit button">Save</button>
+            <button class="button_delete button">
+              <img class="button__remove-img" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
       </section>
       <section>
         <h3 class="title">Completed</h3>
-        <ul id="completed-tasks" class="list">
-          <li class="list-item">
-            <input class="task-check" type="checkbox" checked>
-            <label class="task task-label">See the Doctor</label>
-            <input type="text" class="task task-input">
-            <button class="edit todo-btn">Edit</button>
-            <button class="delete todo-btn">
-              <img class="remove-ico" src="./remove.svg" alt="">
+        <ul class="list list_completed">
+          <li class="task-item">
+            <input class="task-item__input_check" type="checkbox" checked>
+            <label class="task task-item__label">See the Doctor</label>
+            <input type="text" class="task task__input_text">
+            <button class="button_edit button">Edit</button>
+            <button class="button_delete button">
+              <img class="button__remove-img" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
